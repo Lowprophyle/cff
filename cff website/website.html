@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+<title>Data Collection and Visualisation</title>
+<style>
+
+body {
+        height: 100%;
+        background: white;
+        overflow-x: hidden;
+    	font-weight: 300;
+  		font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+/*logo*/
+.logo {
+    position:absolute;
+    left: 5%;
+    top: 2%;
+}
+
+/*navig bar*/
+.bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position:absolute;
+    top:17.5%;
+    width:100%;
+    left:0%;
+}
+
+.bar li {
+    float: left;
+}
+
+.bar li a {
+    display: block;
+    color: white;
+    font-family:Verdana;
+    text-align: center;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size:14px;
+    transition-duration:0.3s;
+}
+
+.bar li a:hover {
+    background: orange;
+    transition-duration:1s;
+    padding: 8px 36px;
+    margin: 4px;
+    
+}
+
+/*search bar*/
+input[type=text] {
+    width: 28%;
+    box-sizing: border-box;
+    border: 2px solid #0BAB1B;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position:relative;
+     left: 35%;
+     top: 20%;
+}
+
+input[type=text]:focus {
+    width: 35%;
+    border: 2px solid orange;
+    
+}
+
+/*nav tabs*/
+.loginwindow{
+  background: #fff; 
+ position:absolute;
+    left: 4%;
+    top: 18%;
+    
+
+}
+
+.nav-tabs.nav-justified{
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  text-align:center;
+
+}
+
+.nav-tabs.nav-justified li {
+  margin-bottom: none;
+  position: initial;
+  border-bottom: 0px solid;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+   zoom:1; /* hasLayout ie7 trigger */
+  width: 45%;
+  margin-bottom:-5px;
+
+}
+
+.nav-tabs.nav-justified li a {
+  position: initial;
+  border-bottom: 0px solid;
+  background: transparent;
+  border: none;
+  color: gray;
+}
+
+.nav-tabs.nav-justified> li.active > a,
+.nav-tabs.nav-justified> li.active > a:focus,
+.nav-tabs.nav-justified> li.active > a:hover{
+  border-width: 0;
+  color: orange;
+  font-weight: bold;
+  border-bottom: 3px solid orange;
+  border-radius:0px;
+}
+
+.nav-tabs > li > a:hover {
+  background: transparent;
+}
+
+
+</style>
+
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+
+<!--logo-->
+<img class="logo" src="cfflogo.png"> 
+
+<!--navigation bar-->
+<div class="bar">
+<ul>
+  <li><a href="#back">Back</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#faq">FAQ</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+</div>
+
+<!-- Push Wrapper -->
+            <div class="mp-pusher" id="mp-pusher">
+
+<!--nav tabs-->
+        <div class="loginwindow col-lg-11 main">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a data-toggle="tab" href="#home" class="text-center">VISUALISE DATA</a></li>
+                    <li class=""><a data-toggle="tab" href="#menu1" class="text-center">SHOW DATA</a></li>
+                </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>ANALYSIS</h3>
+                    <p>Select any 2 or 3 fields of your choice.</p>
+
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>TABLE VIEW</h3>
+                    <p>Table view will be here.</p>
+                </div>
+            </div>
+                
+        </div>
+
+        <!-- mp-menu -->
+                <nav id="mp-menu" class="mp-menu">
+                    <div class="mp-level">
+                        <h2>DATA FILTER</h2>
+                        <ul>
+                            <li>
+                                <a href="#">&lt Variables</a>
+                                <div class="mp-level">
+                                    <h2>Variables</h2>
+                                    <a class="mp-back" href="#">Back &gt</a>
+                                    <ul>
+                                        <li style="font-size:30px; color:#7FFF00; margin: 20px 0 0 60px ;">
+                                            X variable
+                                        </li>
+
+                                        
+                                                <li style="margin: 3px 0 7px 0; padding: 0 45% 0 25%">
+                                                    <select class="axes">
+                                                        <option value="graph1">Graph1</option>
+                                                        <option value="graph2">Graph2</option>
+                                                        <option value="graph3">Graph3</option>
+                                                    </select>
+                                                </li> 
+                                        
+
+                                        <li style="font-size:30px; color:#7FFF00; margin: 0 0 0 60px ;">
+                                            Y variable
+                                        </li>
+
+                            
+                                                <li style="margin: 3px 0 7px 0; padding: 0 45% 0 25%">
+                                                    <select class="axes">
+                                                        <option value="graph1">Graph1</option>
+                                                        <option value="graph2">Graph2</option>
+                                                        <option value="graph3">Graph3</option>
+                                                    </select>
+                                                </li> 
+                                        
+
+
+                                        <li style="font-size:30px; color:#7FFF00; margin: 0 0 0 60px ; ">
+                                            Plants
+                                        </li>
+
+                                        
+                                                <li style="margin: 3px 0 7px 0; padding: 0 45% 0 25%">
+                                                    <select class="axes">
+                                                        <option value="graph1">Graph1</option>
+                                                        <option value="graph2">Graph2</option>
+                                                        <option value="graph3">Graph3</option>
+                                                    </select>
+                                                </li> 
+                                        
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">&lt Graph Options</a>
+                                <div class="mp-level">
+                                    <h2>Graph Options</h2>
+                                    <a class="mp-back" href="#">back &gt</a>
+                                    <ul>
+                                    <!--graph options here-->
+                                        <li  style="font-size:30px; margin: 20px 0 0 60px ; color:#7FFF00;">Graph Type</li>
+
+                                        <li style="margin: 3px 0 7px 0; padding: 0 45% 0 25%">
+                                                    <select class="axes">
+                                                        <option value="graph1">Graph1</option>
+                                                        <option value="graph2">Graph2</option>
+                                                        <option value="graph3">Graph3</option>
+                                                    </select>
+                                        </li>   
+
+                                        <li  style="font-size:30px; margin: 0 0 0 60px ; color:#7FFF00;">Colour Theme</li>
+
+                                        <li style="margin: 3px 0 7px 0; padding: 0 45% 0 25%">
+                                                <select class="axes">
+                                                    <option value="graph1">Graph1</option>
+                                                    <option value="graph2">Graph2</option>
+                                                    <option value="graph3">Graph3</option>
+                                                </select>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                                
+                        </ul>
+                            
+                    </div>
+                </nav>
+                <!-- /mp-menu -->
+                            <!-- Top Navigation -->
+                <div class="block block-40 clearfix">
+                                <p><a href="#" id="trigger" class="menu-trigger">Open/Close Menu</a></p>
+                            </div>  
+        </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/mlpushmenu.js"></script>
+        <script>
+            new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+                type : 'cover'
+            } );
+        </script>
+
+</body>
+</html>
