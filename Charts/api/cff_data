@@ -6,9 +6,9 @@
 header('Content-Type: application/json');
 //initializer of connection
 $servername = "127.0.0.1";
-$username = "root";
-$password = "root123";
-$dbname = "crops_data";
+$username = "newuser";
+$password = "";
+$dbname = "cffbase";
 
 // Create connection with initials above
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -22,7 +22,7 @@ Agr_Ecol_Abs_Temp_Min,
 Agr_Ecol_Abs_Temp_Max
   FROM mytable";*/
   $sql = "SELECT *
-    FROM `table 1`";
+    FROM `prototype`";
 $result = $conn->query($sql);
 
 
