@@ -26,7 +26,7 @@ $(document).ready(function() {
 			//to itterate through data and find values(Agr_Ecol_Opt_Temp_Min)
 			for( var i = 0; i<len ; i++)
 			{
-				to_array[i] = eco_data[i].AgrEcolOptTempMin;
+				to_array[i] = eco_data[i].Agr_Ecol_Opt_Temp_Min;
 			}
 			console.log(to_array); //prints to the console
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
 			//to itterate through data and find values
 			for( var i = 0; i<len ; i++)
 			{
-				to_array1[i] = eco_data[i].AgrEcolOptTempMax;
+				to_array1[i] = eco_data[i].Agr_Ecol_Opt_Temp_Max;
 			}
 			//console.log(to_array1); //prints to the console
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
 			//to itterate through data and find values
 			for( var i = 0; i<len ; i++)
 			{
-				to_array2[i] = eco_data[i].AgrEcolAbsTempMin;
+				to_array2[i] = eco_data[i].Agr_Ecol_Abs_Temp_Min;
 			}
 			//console.log(to_array2); //prints to the console
 
@@ -56,7 +56,7 @@ $(document).ready(function() {
 			//to itterate through data and find values
 			for( var i = 0; i<len ; i++)
 			{
-				to_array3[i] = eco_data[i].AgrEcolAbsTempMax;
+				to_array3[i] = eco_data[i].Agr_Ecol_Abs_Temp_Max;
 			}
 			//console.log(to_array3); //prints to the console
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
 			//var len = eco_data.length;
 			for( var i = 0; i<len ; i++)
 			{
-				names[i] = eco_data[i].SciName;
+				names[i] = eco_data[i].Sci_Name;
 			}
 			//console.log(names);
 
