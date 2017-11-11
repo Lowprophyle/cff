@@ -13,7 +13,7 @@ $(document).ready(function() {
 	 * call the data.php file to fetch the result from db table.
 	 */
 	$.ajax({
-		url : "http://35.196.202.152/Charts/api/cff_data",
+		url : "http://35.196.202.152/Charts/api/cff_data.php",
 		type : "GET",
 		success : function(eco_data){
 			console.log(eco_data);
