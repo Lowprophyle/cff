@@ -22,11 +22,10 @@ Agr_Ecol_Opt_Temp_Min,
 Agr_Ecol_Opt_Temp_Max,
 Agr_Ecol_Abs_Temp_Min,
 Agr_Ecol_Abs_Temp_Max
-  FROM `prototype`";
+  FROM prototype";
 /*  $sql = "SELECT *
-    FROM `prototype`";
+    FROM `table 1`";
 */
-
 $result = $conn->query($sql);
 
 
