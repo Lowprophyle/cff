@@ -78,7 +78,7 @@ function hide_canvas(){
 					//var len = eco_data.length;
 					for( var i = 0; i<len ; i++)
 					{
-						names[i] = eco_data[i].SciName;
+						names[i] = eco_data[i].Sci_Name;
 					}
 					//console.log(names);
 
